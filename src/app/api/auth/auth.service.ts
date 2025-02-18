@@ -14,7 +14,6 @@ export class AuthService {
         name: data.name,
         email: data.email,
         password: hashedPassword,
-        role: 'user',
       },
     });
     return { message: 'User berhasil dibuat', user: newUser };

@@ -28,7 +28,6 @@ const newUser = await prisma.user.create({
     name,
     email,
     password: hashedPassword,
-    role: 'user', // or whatever default role you want to assign
   },
 });
 
